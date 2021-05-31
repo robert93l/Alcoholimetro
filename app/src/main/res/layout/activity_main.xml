@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/maderaprincipal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/alcoholimetrotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALCOHOLIMETRO"
+        android:textColor="#EDB50B"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="369dp"
+        android:layout_height="665dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/numero2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Peso en Kilogramos"
+            android:inputType="numberDecimal"
+            android:text=""
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/numero1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Mililitros bebidos"
+            android:inputType="numberDecimal"
+            android:text=""
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/numero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="% Graduacion bebida"
+            android:inputType="numberDecimal"
+            android:text=""
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="operacionMujer"
+                android:src="@drawable/mujer"
+                tools:srcCompat="@drawable/mujer" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#F3F2F2"
+                android:onClick="operacionHombre"
+                android:src="@drawable/hombre"
+                tools:srcCompat="@drawable/hombre" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

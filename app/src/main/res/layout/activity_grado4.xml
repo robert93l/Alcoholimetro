@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Grado4">
+
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="650dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acohol Niveles 3 a 4"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apenas podemos concentrarnos más y se trata de la visión del túnel. Así lo llaman cuando nuestro campo de visión está limitado por una cuarta parte. Con este valor por mil, nuestro tiempo de reacción se amplía entre un 30 y un 50 por ciento y tenemos que luchar contra los desequilibrios. Al mismo tiempo, muchos se vuelven eufóricos, desinhibidos y se sobreestiman a sí mismos, una combinación peligrosa. La intoxicación difícilmente se puede pasar por alto para nuestro medio ambiente."
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
